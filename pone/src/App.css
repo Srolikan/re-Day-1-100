@@ -1,0 +1,73 @@
+.body {
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* Nav */
+.hamburger-menu {
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.menu-bar1,
+.menu-bar2,
+.menu-bar3 {
+    width: 3.5rem;
+    height: 0.2rem;
+    background-color: #555;
+    margin: 0.8rem 0;
+    transition: 0.4s;
+}
+
+.menu-bar2 {
+    width: 2rem;
+    margin-right: auto;
+}
+
+.active .menu-bar1 {
+    transform: rotate(-45deg) translate(-0.7rem, 0.8rem);
+}
+
+/* FADE OUT SECOND BAR */
+.active .menu-bar2 {
+    opacity: 0;
+}
+
+/* ROTATE LAST BAR */
+.active .menu-bar3 {
+    transform: rotate(45deg) translate(-0.6rem, -0.8rem);
+}
+
+
+/* Cards */
+.card-container {
+    margin-top: 13%;
+}
+
+.card:nth-child(1) {
+    z-index: 5;
+    rotate: 4deg;
+}
+
+.card:nth-child(2) {
+    z-index: 4;
+    rotate: 2deg;
+}
+
+.card:nth-child(3) {
+    z-index: 3;
+    rotate: 6deg;
+}
+
+.card:nth-child(4) {
+    z-index: 2;
+    rotate: 1deg;
+}
+
+.card:nth-child(5) {
+    z-index: 1;
+    rotate: 4deg;
+}
