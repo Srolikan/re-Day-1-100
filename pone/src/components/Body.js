@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import imageData from '../data.json';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,7 +16,6 @@ function Body() {
     return (
         <div className="body">
             <div className='card-container'>
-                <p>PREV</p>
                 <Slider {...settings}>
                     {imageData.map((item) => (
                         <div key={item.id} className="card" style={{ width: '22px' }}>
@@ -29,7 +28,9 @@ function Body() {
                         </div>
                     ))}
                 </Slider>
-                <p>NEXT</p>
+                <div className='gridcard'>
+
+                </div>
             </div>
         </div>
     );

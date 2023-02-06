@@ -1,12 +1,16 @@
 import './App.css';
 import Body from './components/Body';
 import Nav from './components/Nav';
+import Sizebar from './components/Sizebar';
 
 function App() {
   return (
-    <div classNameNameName="App">
+    <div classNameNameName="app">
       <Nav />
-      <Body />
+      <main>
+        <Sizebar done="40" />
+        <Body />
+      </main>
     </div>
   );
 }

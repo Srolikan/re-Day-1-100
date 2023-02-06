@@ -1,4 +1,7 @@
+// import { FontAwesomeIcon } from '@fontawesome/react-fontawesome'
+import { FaInstagram } from 'react-icons/fa'
 import React from 'react'
+import '../App.css'
 
 const Nav = () => {
     return (
@@ -15,11 +18,16 @@ const Nav = () => {
         //         </li>
         //     </ul>
         // </div>
+        <div className="nav">
+            <div className="hamburger-menu" id="hamburger-menu">
+                <div className="menu-bar1"></div>
+                <div className="menu-bar2"></div>
+                <div className="menu-bar3"></div>
+            </div>
 
-        <div class="hamburger-menu" id="hamburger-menu">
-            <div class="menu-bar1"></div>
-            <div class="menu-bar2"></div>
-            <div class="menu-bar3"></div>
+            <h3 className='title'>BUĞRA YÜZER</h3>
+
+            <FaInstagram size="30" className='instagram' />
         </div>
     )
 }
